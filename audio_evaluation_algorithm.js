@@ -1,6 +1,6 @@
 main()
 
-
+// main test function
 function main() {
 	// body...
 	var test = "this is to meet you";
@@ -24,7 +24,6 @@ function calSimilarity(test, standard) {
 
 	return 1 - (calDistance(test.toLowerCase(), standard.toLowerCase())/standard.length);
 }
-
 
 
 /**
