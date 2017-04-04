@@ -1,3 +1,14 @@
+main()
+
+
+function main() {
+	// body...
+	var test = "this is to meet you";
+	var standard = "these to meet you";
+	var output = "\'".concat(test).concat("\' is ").concat(calSimilarity(test, standard)).concat(" similar than \'").concat(standard).concat("\'");
+	console.log(output);
+}
+
 /**
  *
  * Calculate the similarity of two strings based on their distance
@@ -10,6 +21,7 @@ function calSimilarity(test, standard) {
 	if (test == null || test == undefined || test == '') { 
       return 0;
 	}
+
 	return 1 - (calDistance(test.toLowerCase(), standard.toLowerCase())/standard.length);
 }
 
@@ -48,18 +60,17 @@ function calDistance(str, lib) {
 	var strchar, libchar;
 	for (var i = 1; i <= str_len; i++) {
 		strchar = str.charAt(i-1);
-		for (var j = 1; j < lib_len; i++) {
-			libchar = lib.charAt(j);
+		for (var j = 1; j <= lib_len; j++) {
+			libchar = lib.charAt(j-1);
 			if (strchar == libchar) {
 				eq = 0;
 			}
 			else {
 				eq = 1;
 			}
-			dist_arr = Math.min(dist_arr[i-1][j-1]+eq, Math.min(dist_arr[i][j-1]+1, d[i-1][j]+1));
+			dist_arr[i][j] = Math.min(dist_arr[i-1][j-1]+eq, Math.min(dist_arr[i][j-1]+1, dist_arr[i-1][j]+1));
 		}
 	}
-
 	return dist_arr[str_len][lib_len];
 }
 
@@ -76,10 +87,16 @@ function calDistance(str, lib) {
 
 function create2DArray(row, col) {
 
-    var arr = new Array(row),
+    var arr = new Array(row);
 
     for (var i = 0; i < row; i++) {
   		arr[i] = new Array(col);
+	}
+
+	for (var i = 0; i < row; i++) {
+		for (var j = 0; j < col; j++) {
+			arr[i][j] = 0;
+		}
 	}
 
     return arr;
