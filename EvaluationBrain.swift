@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Fangzhou Liu. All rights reserved.
 //
 //  Reference:
-//  [1] String Extension library comes from http://stackoverflow.com/questions/24092884/get-nth-character-of-a-string-in-swift-programming-language
+//  [1] Parts of the String Extension library comes from http://stackoverflow.com/questions/24092884/get-nth-character-of-a-string-in-swift-programming-language
 //
 
 import Foundation
@@ -26,7 +26,7 @@ class EvaluationBrain {
             return 0.0
         }
         
-        return 1.0 - Double(calDistance(str: test.lowercased(), lib: standard.lowercased()))/Double(standard.length)
+        return 1.0 - Double(calDistance(str: test.lowercased(), lib: standard.lowercased().rmpunctuation))/Double(standard.rmpunctuation.length)
     }
     
     
@@ -42,8 +42,7 @@ class EvaluationBrain {
     func calDistance(str: String, lib: String) -> Int {
         // get the string length of two stirngs
         let str_len = str.length
-        let lib_len = lib.length
-        
+        let lib_len = lib.length-1
         
         if str_len == 0 {
             return lib_len
@@ -108,5 +107,23 @@ extension String {
         return self[Range(start ..< end)]
     }
     
+    // clear all the extra space character in the string
+    func rmspace(string: String) -> String {
+        let result = string.components(separatedBy: NSCharacterSet.whitespaces)
+        return result.joined()
+        
+    }
+    // clear all punctuations
+    var rmpunctuation:  String {
+        let strArr = self.components(separatedBy: NSCharacterSet.whitespaces)
+        var result = ""
+        strArr.forEach{ (str) in
+            var temp = str.components(separatedBy: NSCharacterSet.punctuationCharacters)
+            temp = temp.filter( {!$0.isEmpty} )
+            result += temp[0] + " "
+        }
+        print(result)
+        return result
+    }
+    
 }
-
