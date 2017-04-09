@@ -15,6 +15,39 @@ class EvaluationBrain {
     
     /**
      *
+     * Calculate the similarity of two strings based on their distance words by words
+     * @para test: 		string to be meaturered
+     * @para standard:  standard string
+     * @return: 		a Array of NPTuple, will be used for UI
+     */
+    func getErrorArray(test: String, standard: String) -> Array<NPTuple> {
+        var npArr : Array<NPTuple> = Array()
+        var tWordsArr = test.preprocessed.components(separatedBy: " ").filter( {!$0.isEmpty} )
+        var sWordsArr = standard.preprocessed.components(separatedBy: " ").filter( {!$0.isEmpty} )
+        print("tWordsArr: \(tWordsArr) .length = \(tWordsArr.count)\nsWordsArr: \(sWordsArr) .length = \(sWordsArr.count)")
+        var i = 0, j = 0
+        while i < tWordsArr.count && j < sWordsArr.count {
+            if tWordsArr[i] == sWordsArr[i] {
+                i += 1
+                j += 1
+                continue;
+            }
+            if (calSimilarity(test: tWordsArr[i], standard: sWordsArr[j]) <= 0.4) {
+                npArr.append(NPTuple(lib:sWordsArr[j], test:"", score:0.0))
+                j += 1
+            }
+            else {
+                
+                npArr.append(NPTuple(lib:sWordsArr[j], test:tWordsArr[i], score:calSimilarity(test: tWordsArr[i], standard: sWordsArr[j])))
+                i += 1
+                j += 1
+            }
+        }
+        return npArr;
+    }
+    
+    /**
+     *
      * Calculate the similarity of two strings based on their distance
      * @para test: 		string to be meaturered
      * @para standard:  standard string
@@ -26,7 +59,8 @@ class EvaluationBrain {
             return 0.0
         }
         
-        return 1.0 - Double(calDistance(str: test.lowercased(), lib: standard.lowercased().rmpunctuation))/Double(standard.rmpunctuation.length)
+//        print("test.length = \(Double(calDistance(str: test.lowercased(), lib: standard.lowercased().rmpunctuation)))\nstandard.length = \(Double(standard.rmpunctuation.length))" )
+        return 1.0 - Double(calDistance(str: test.lowercased(), lib: standard.preprocessed))/Double(standard.preprocessed.length)
     }
     
     
@@ -40,6 +74,7 @@ class EvaluationBrain {
      * @return  : 	double variable, the similarity between two strings
      */
     func calDistance(str: String, lib: String) -> Int {
+        print("test = \(str)\nlib = \(lib)")
         // get the string length of two stirngs
         let str_len = str.length
         let lib_len = lib.length-1
@@ -51,11 +86,11 @@ class EvaluationBrain {
         // create a array with size strlen+1 * liblen+1
         var distArr = Array(repeating: Array(repeating: 0, count: lib_len+1), count: str_len+1)
         
-        for i in 0 ..< str_len {
+        for i in 0 ... str_len {
             distArr[i][0] = i
         }
         
-        for j in 0 ..< lib_len {
+        for j in 0 ... lib_len {
             distArr[0][j] = j
         }
         
@@ -120,10 +155,16 @@ extension String {
         strArr.forEach{ (str) in
             var temp = str.components(separatedBy: NSCharacterSet.punctuationCharacters)
             temp = temp.filter( {!$0.isEmpty} )
-            result += temp[0] + " "
+            temp.forEach{ (s) in
+                result += s + " "
+            }
         }
-        print(result)
+        print("result = \(result)")
         return result
+    }
+    
+    var preprocessed: String {
+        return self.lowercased().rmpunctuation
     }
     
 }

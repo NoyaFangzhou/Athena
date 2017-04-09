@@ -10,11 +10,17 @@ import Foundation
 
 var brain = EvaluationBrain()
 
-var test = "Thesis god"
+var test = "i sheep"
 
-var standard = "This is good"
+var standard = "i am  a ship"
 
 var score = brain.calSimilarity(test: test, standard: standard)
 
 print("The similarity between \(test) and \(standard) is \(score)")
+
+var errArr = brain.getErrorArray(test: test, standard: standard)
+
+for e in errArr {
+    print(e.toString())
+}
 
