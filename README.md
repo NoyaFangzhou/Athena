@@ -7,10 +7,19 @@ Then add following code into your project
 
 ```C++
 var brain = EvaluationBrain()
-
+/* Get the overall score for str1 compared with str2 */
 var score = brain.calSimilarity(test: str1, standard: str2)
 
 print(score)
+
+/* Get the detail for str1 compared with str2
+ * includes which words in str1 is missing and which words in str1 need practice
+ */
+var errArr = brain.getErrorArray(test: str1, standard: str2)
+
+for e in errArr {
+    print(e.toString())
+}
 ```
 Here str1 is the string to be tested and str2 is the standard string. The return value is a double variable indicates the similarity level
 
