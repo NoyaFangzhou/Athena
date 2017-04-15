@@ -3,8 +3,8 @@ main()
 // main test function
 function main() {
 	// body...
-	var test = "this is to meet you";
-	var standard = "these to meet you";
+	var test = "sheep";
+	var standard = "a";
 	var output = "\'".concat(test).concat("\' is ").concat(calSimilarity(test, standard)).concat(" similar than \'").concat(standard).concat("\'");
 	console.log(output);
 }

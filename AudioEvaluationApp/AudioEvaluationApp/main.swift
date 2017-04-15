@@ -10,9 +10,9 @@ import Foundation
 
 var brain = EvaluationBrain()
 
-var test = "i sheep"
+var test = "I'm be coming over soon"
 
-var standard = "i am  a ship"
+var standard = "I'm be coming over soon"
 
 var score = brain.calSimilarity(test: test, standard: standard)
 
