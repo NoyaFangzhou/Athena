@@ -1,0 +1,90 @@
+PODS:
+  - "!ProtoCompiler (3.0.2)":
+    - Protobuf (~> 3.0)
+  - "!ProtoCompiler-gRPCPlugin (1.0.2)":
+    - "!ProtoCompiler (= 3.0.2)"
+    - gRPC-ProtoRPC (= 1.0.2)
+  - AWSCognito (2.5.2):
+    - AWSCore (= 2.5.2)
+  - AWSCognitoIdentityProvider (2.5.2):
+    - AWSCore (= 2.5.2)
+  - AWSCore (2.5.2)
+  - AWSDynamoDB (2.5.2):
+    - AWSCore (= 2.5.2)
+  - AWSLambda (2.5.2):
+    - AWSCore (= 2.5.2)
+  - AWSPolly (2.5.2):
+    - AWSCore (= 2.5.2)
+  - AWSS3 (2.5.2):
+    - AWSCore (= 2.5.2)
+  - BoringSSL (7.0):
+    - BoringSSL/Implementation (= 7.0)
+    - BoringSSL/Interface (= 7.0)
+  - BoringSSL/Implementation (7.0):
+    - BoringSSL/Interface (= 7.0)
+  - BoringSSL/Interface (7.0)
+  - DownPicker (0.1.34)
+  - googleapis (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)"
+    - googleapis/Messages (= 0.0.1)
+    - googleapis/Services (= 0.0.1)
+  - googleapis/Messages (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)"
+    - Protobuf
+  - googleapis/Services (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)"
+    - googleapis/Messages
+    - gRPC-ProtoRPC
+  - gRPC (1.0.2):
+    - gRPC-Core (= 1.0.2)
+    - gRPC-RxLibrary (= 1.0.2)
+  - gRPC-Core (1.0.2):
+    - gRPC-Core/Implementation (= 1.0.2)
+    - gRPC-Core/Interface (= 1.0.2)
+  - gRPC-Core/Implementation (1.0.2):
+    - BoringSSL (~> 7.0)
+    - gRPC-Core/Interface (= 1.0.2)
+  - gRPC-Core/Interface (1.0.2)
+  - gRPC-ProtoRPC (1.0.2):
+    - gRPC (= 1.0.2)
+    - gRPC-RxLibrary (= 1.0.2)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.0.2)
+  - Protobuf (3.2.0)
+
+DEPENDENCIES:
+  - AWSCognito
+  - AWSCognitoIdentityProvider
+  - AWSDynamoDB
+  - AWSLambda
+  - AWSPolly
+  - AWSS3
+  - DownPicker
+  - googleapis (from `.`)
+
+EXTERNAL SOURCES:
+  googleapis:
+    :path: "."
+
+SPEC CHECKSUMS:
+  "!ProtoCompiler": cfad9cbe5299a4923b1c3c8f150818c91efd0b6d
+  "!ProtoCompiler-gRPCPlugin": ee00d28bb35b26e2657f239833b8f2aa66724f96
+  AWSCognito: a29c52e3a3d4988f01b449c8b229a51b73d1c1bf
+  AWSCognitoIdentityProvider: 496a5d717180e4127f038be3c6494bc59e8ff4dd
+  AWSCore: b2fe455c2c7d6653521238c5b0b0ddb67ec4f063
+  AWSDynamoDB: 311ba51593276a198f8a611c9e89706bd0fe740f
+  AWSLambda: 330b7bddbb34632de02b31536cb7f7c10546dfc4
+  AWSPolly: a87083d6ec5278a81f6aa222eb8ecea852e53027
+  AWSS3: 1f53d780bae0a5949f11da99520c14684bc90af0
+  BoringSSL: 50035b9d9eeff5529587311782fc57c00ebf13ae
+  DownPicker: c00ea63f08ae82116cc93d0eba74e86bf3d4c68e
+  googleapis: daa20dca7a0097c6c3316fdfd888e0ba1b7c8921
+  gRPC: dd3a91e0fb770b9fc4f43d1292fb19f2a2e04158
+  gRPC-Core: cc4a7613190ff0bc60a0c1e702ef07cd3f868ae6
+  gRPC-ProtoRPC: 11533510522a5e9627883a597a796cfe6bef05f3
+  gRPC-RxLibrary: 02cc70b76bc0c5bc622ba27595cca2598d9fe528
+  Protobuf: 745f59e122e5de98d4d7ef291e264a0eef80f58e
+
+PODFILE CHECKSUM: ad93a683cc832c96e5caf4144b84f2e0c61c5614
+
+COCOAPODS: 1.2.0

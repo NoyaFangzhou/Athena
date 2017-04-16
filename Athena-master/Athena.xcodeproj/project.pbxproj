@@ -1,0 +1,1038 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CB6FAFB97E7965B038BFDEB /* Pods_Athena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227D82F6DEC828C1000889EC /* Pods_Athena.framework */; };
+		534B1D411E95878D00A309D3 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534B1D401E95878D00A309D3 /* AudioController.swift */; };
+		534B1D441E95882500A309D3 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534B1D431E95882500A309D3 /* SpeechRecognitionService.swift */; };
+		534B1D461E95948C00A309D3 /* EvaluationBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534B1D451E95948C00A309D3 /* EvaluationBrain.swift */; };
+		53C346301E79C66900582A16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C3462F1E79C66900582A16 /* AppDelegate.swift */; };
+		53C346321E79C66900582A16 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C346311E79C66900582A16 /* MainViewController.swift */; };
+		53C346351E79C66900582A16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C346331E79C66900582A16 /* Main.storyboard */; };
+		53C346371E79C66900582A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C346361E79C66900582A16 /* Assets.xcassets */; };
+		53C3463A1E79C66900582A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C346381E79C66900582A16 /* LaunchScreen.storyboard */; };
+		53C346451E79C66900582A16 /* AthenaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C346441E79C66900582A16 /* AthenaTests.swift */; };
+		53C346501E79C66900582A16 /* AthenaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C3464F1E79C66900582A16 /* AthenaUITests.swift */; };
+		53F0C42B1E9963E800AB30C9 /* Sdk in Resources */ = {isa = PBXBuildFile; fileRef = 53F0C42A1E9963E800AB30C9 /* Sdk */; };
+		53F0C42C1E9963E800AB30C9 /* Sdk in Resources */ = {isa = PBXBuildFile; fileRef = 53F0C42A1E9963E800AB30C9 /* Sdk */; };
+		53F0C42D1E9963E800AB30C9 /* Sdk in Resources */ = {isa = PBXBuildFile; fileRef = 53F0C42A1E9963E800AB30C9 /* Sdk */; };
+		53F0C42F1E99645200AB30C9 /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F0C42E1E99645200AB30C9 /* AWSCognitoIdentityProvider.framework */; };
+		53F0C4301E99645200AB30C9 /* AWSCognitoIdentityProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53F0C42E1E99645200AB30C9 /* AWSCognitoIdentityProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53F0C4331E99645E00AB30C9 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F0C4321E99645E00AB30C9 /* AWSCore.framework */; };
+		53F0C4341E99645E00AB30C9 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53F0C4321E99645E00AB30C9 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53F0C43A1E9964AD00AB30C9 /* AWSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4371E9964AD00AB30C9 /* AWSConfiguration.swift */; };
+		53F0C43B1E9964AD00AB30C9 /* AWSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4371E9964AD00AB30C9 /* AWSConfiguration.swift */; };
+		53F0C43C1E9964AD00AB30C9 /* AWSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4371E9964AD00AB30C9 /* AWSConfiguration.swift */; };
+		53F0C43D1E9964AD00AB30C9 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4381E9964AD00AB30C9 /* AWSMobileClient.swift */; };
+		53F0C43E1E9964AD00AB30C9 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4381E9964AD00AB30C9 /* AWSMobileClient.swift */; };
+		53F0C43F1E9964AD00AB30C9 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4381E9964AD00AB30C9 /* AWSMobileClient.swift */; };
+		53F0C4401E9964AD00AB30C9 /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F0C4391E9964AD00AB30C9 /* AWSMobileHubHelper.framework */; };
+		53F0C4411E9964AD00AB30C9 /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F0C4391E9964AD00AB30C9 /* AWSMobileHubHelper.framework */; };
+		53F0C4421E9964AD00AB30C9 /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F0C4391E9964AD00AB30C9 /* AWSMobileHubHelper.framework */; };
+		53F0C4441E99664C00AB30C9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F0C4431E99664C00AB30C9 /* libz.tbd */; };
+		53F0C4461E99666000AB30C9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F0C4451E99666000AB30C9 /* libsqlite3.tbd */; };
+		53F0C4481E9967E400AB30C9 /* UserIdentityAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4471E9967E400AB30C9 /* UserIdentityAccess.swift */; };
+		53F0C4491E9967E400AB30C9 /* UserIdentityAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4471E9967E400AB30C9 /* UserIdentityAccess.swift */; };
+		53F0C44A1E9967E400AB30C9 /* UserIdentityAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4471E9967E400AB30C9 /* UserIdentityAccess.swift */; };
+		53F0C4561E99684C00AB30C9 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F0C44C1E99684C00AB30C9 /* SignIn.storyboard */; };
+		53F0C4571E99684C00AB30C9 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F0C44C1E99684C00AB30C9 /* SignIn.storyboard */; };
+		53F0C4581E99684C00AB30C9 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F0C44C1E99684C00AB30C9 /* SignIn.storyboard */; };
+		53F0C4591E99684C00AB30C9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C44D1E99684C00AB30C9 /* SignInViewController.swift */; };
+		53F0C45A1E99684C00AB30C9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C44D1E99684C00AB30C9 /* SignInViewController.swift */; };
+		53F0C45B1E99684C00AB30C9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C44D1E99684C00AB30C9 /* SignInViewController.swift */; };
+		53F0C45C1E99684C00AB30C9 /* SignInViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C44F1E99684C00AB30C9 /* SignInViewControllerExtensions.swift */; };
+		53F0C45D1E99684C00AB30C9 /* SignInViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C44F1E99684C00AB30C9 /* SignInViewControllerExtensions.swift */; };
+		53F0C45E1E99684C00AB30C9 /* SignInViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C44F1E99684C00AB30C9 /* SignInViewControllerExtensions.swift */; };
+		53F0C45F1E99684C00AB30C9 /* UserPoolForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4501E99684C00AB30C9 /* UserPoolForgotPasswordViewController.swift */; };
+		53F0C4601E99684C00AB30C9 /* UserPoolForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4501E99684C00AB30C9 /* UserPoolForgotPasswordViewController.swift */; };
+		53F0C4611E99684C00AB30C9 /* UserPoolForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4501E99684C00AB30C9 /* UserPoolForgotPasswordViewController.swift */; };
+		53F0C4621E99684C00AB30C9 /* UserPoolMFAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4511E99684C00AB30C9 /* UserPoolMFAViewController.swift */; };
+		53F0C4631E99684C00AB30C9 /* UserPoolMFAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4511E99684C00AB30C9 /* UserPoolMFAViewController.swift */; };
+		53F0C4641E99684C00AB30C9 /* UserPoolMFAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4511E99684C00AB30C9 /* UserPoolMFAViewController.swift */; };
+		53F0C4651E99684C00AB30C9 /* UserPoolNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4521E99684C00AB30C9 /* UserPoolNewPasswordViewController.swift */; };
+		53F0C4661E99684C00AB30C9 /* UserPoolNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4521E99684C00AB30C9 /* UserPoolNewPasswordViewController.swift */; };
+		53F0C4671E99684C00AB30C9 /* UserPoolNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4521E99684C00AB30C9 /* UserPoolNewPasswordViewController.swift */; };
+		53F0C4681E99684C00AB30C9 /* UserPools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F0C4531E99684C00AB30C9 /* UserPools.storyboard */; };
+		53F0C4691E99684C00AB30C9 /* UserPools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F0C4531E99684C00AB30C9 /* UserPools.storyboard */; };
+		53F0C46A1E99684C00AB30C9 /* UserPools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F0C4531E99684C00AB30C9 /* UserPools.storyboard */; };
+		53F0C46B1E99684C00AB30C9 /* UserPoolSignUpConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4541E99684C00AB30C9 /* UserPoolSignUpConfirmationViewController.swift */; };
+		53F0C46C1E99684C00AB30C9 /* UserPoolSignUpConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4541E99684C00AB30C9 /* UserPoolSignUpConfirmationViewController.swift */; };
+		53F0C46D1E99684C00AB30C9 /* UserPoolSignUpConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4541E99684C00AB30C9 /* UserPoolSignUpConfirmationViewController.swift */; };
+		53F0C46E1E99684C00AB30C9 /* UserPoolSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4551E99684C00AB30C9 /* UserPoolSignUpViewController.swift */; };
+		53F0C46F1E99684C00AB30C9 /* UserPoolSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4551E99684C00AB30C9 /* UserPoolSignUpViewController.swift */; };
+		53F0C4701E99684C00AB30C9 /* UserPoolSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C4551E99684C00AB30C9 /* UserPoolSignUpViewController.swift */; };
+		DA242C4D1EA30ACC00573EE1 /* ATHBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C411EA30ACC00573EE1 /* ATHBackgroundView.swift */; };
+		DA242C4E1EA30ACC00573EE1 /* ATHBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C421EA30ACC00573EE1 /* ATHBaseView.swift */; };
+		DA242C4F1EA30ACC00573EE1 /* ATHBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C431EA30ACC00573EE1 /* ATHBlurView.swift */; };
+		DA242C501EA30ACC00573EE1 /* ATHFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C441EA30ACC00573EE1 /* ATHFootView.swift */; };
+		DA242C511EA30ACC00573EE1 /* ATHHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C451EA30ACC00573EE1 /* ATHHeadView.swift */; };
+		DA242C521EA30ACC00573EE1 /* ATHHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C461EA30ACC00573EE1 /* ATHHintView.swift */; };
+		DA242C531EA30ACC00573EE1 /* ATHInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C471EA30ACC00573EE1 /* ATHInputView.swift */; };
+		DA242C541EA30ACC00573EE1 /* ATHLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C481EA30ACC00573EE1 /* ATHLabel.swift */; };
+		DA242C551EA30ACC00573EE1 /* ATHLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C491EA30ACC00573EE1 /* ATHLogButton.swift */; };
+		DA242C561EA30ACC00573EE1 /* ATHRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C4A1EA30ACC00573EE1 /* ATHRoundButton.swift */; };
+		DA242C571EA30ACC00573EE1 /* ATHSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C4B1EA30ACC00573EE1 /* ATHSignInView.swift */; };
+		DA242C581EA30ACC00573EE1 /* ATHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C4C1EA30ACC00573EE1 /* ATHTextView.swift */; };
+		DA242C5E1EA30AF000573EE1 /* ATHBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C5A1EA30AF000573EE1 /* ATHBaseViewController.swift */; };
+		DA242C601EA30AF000573EE1 /* ATHPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C5C1EA30AF000573EE1 /* ATHPracticeViewController.swift */; };
+		DA242C611EA30AF000573EE1 /* ATHSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C5D1EA30AF000573EE1 /* ATHSignUpViewController.swift */; };
+		DA242C6B1EA30B0F00573EE1 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C631EA30B0F00573EE1 /* Background.png */; };
+		DA242C6C1EA30B0F00573EE1 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C641EA30B0F00573EE1 /* logo.png */; };
+		DA242C6D1EA30B0F00573EE1 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C651EA30B0F00573EE1 /* menu.png */; };
+		DA242C6E1EA30B0F00573EE1 /* mic-en.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C661EA30B0F00573EE1 /* mic-en.png */; };
+		DA242C6F1EA30B0F00573EE1 /* Nail your English speech pronunciation. copy.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C671EA30B0F00573EE1 /* Nail your English speech pronunciation. copy.png */; };
+		DA242C701EA30B0F00573EE1 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C681EA30B0F00573EE1 /* play.png */; };
+		DA242C711EA30B0F00573EE1 /* return.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C691EA30B0F00573EE1 /* return.png */; };
+		DA242C721EA30B0F00573EE1 /* volume.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C6A1EA30B0F00573EE1 /* volume.png */; };
+		DA242C7E1EA30B2E00573EE1 /* STArchLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C741EA30B2E00573EE1 /* STArchLoading.swift */; };
+		DA242C7F1EA30B2E00573EE1 /* STBouncyPreloaderLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C751EA30B2E00573EE1 /* STBouncyPreloaderLoading.swift */; };
+		DA242C801EA30B2E00573EE1 /* STGlassesLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C761EA30B2E00573EE1 /* STGlassesLoading.swift */; };
+		DA242C811EA30B2E00573EE1 /* STPacManLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C771EA30B2E00573EE1 /* STPacManLoading.swift */; };
+		DA242C821EA30B2E00573EE1 /* STSubmitLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C781EA30B2E00573EE1 /* STSubmitLoading.swift */; };
+		DA242C831EA30B2E00573EE1 /* STTriangleLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C791EA30B2E00573EE1 /* STTriangleLoading.swift */; };
+		DA242C841EA30B2E00573EE1 /* STWalkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C7A1EA30B2E00573EE1 /* STWalkLoading.swift */; };
+		DA242C851EA30B2E00573EE1 /* STZhiHuLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C7B1EA30B2E00573EE1 /* STZhiHuLoading.swift */; };
+		DA242C861EA30B2E00573EE1 /* STLoadingable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C7C1EA30B2E00573EE1 /* STLoadingable.swift */; };
+		DA242C871EA30B2E00573EE1 /* STLoadingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C7D1EA30B2E00573EE1 /* STLoadingGroup.swift */; };
+		DA242C8A1EA30B5600573EE1 /* ATHMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA242C891EA30B5600573EE1 /* ATHMacro.swift */; };
+		DA242C921EA30CB000573EE1 /* happy_face.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C8D1EA30CB000573EE1 /* happy_face.png */; };
+		DA242C931EA30CB000573EE1 /* neutral_face.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C8E1EA30CB000573EE1 /* neutral_face.png */; };
+		DA242C941EA30CB000573EE1 /* sad_face.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C8F1EA30CB000573EE1 /* sad_face.png */; };
+		DA242C951EA30CB000573EE1 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C901EA30CB000573EE1 /* back.png */; };
+		DA242C961EA30CB000573EE1 /* OK_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = DA242C911EA30CB000573EE1 /* OK_hand.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53C346411E79C66900582A16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53C346241E79C66900582A16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53C3462B1E79C66900582A16;
+			remoteInfo = Athena;
+		};
+		53C3464C1E79C66900582A16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53C346241E79C66900582A16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53C3462B1E79C66900582A16;
+			remoteInfo = Athena;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		53F0C4311E99645200AB30C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				53F0C4301E99645200AB30C9 /* AWSCognitoIdentityProvider.framework in Embed Frameworks */,
+				53F0C4341E99645E00AB30C9 /* AWSCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		227D82F6DEC828C1000889EC /* Pods_Athena.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athena.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5336E2F71EA2A7B000E670EF /* DownPicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DownPicker-Bridging-Header.h"; sourceTree = "<group>"; };
+		534B1D401E95878D00A309D3 /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		534B1D421E9587E400A309D3 /* Speech-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Speech-Bridging-Header.h"; sourceTree = "<group>"; };
+		534B1D431E95882500A309D3 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		534B1D451E95948C00A309D3 /* EvaluationBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvaluationBrain.swift; sourceTree = "<group>"; };
+		53C3462C1E79C66900582A16 /* Athena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Athena.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C3462F1E79C66900582A16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53C346311E79C66900582A16 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		53C346341E79C66900582A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53C346361E79C66900582A16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53C346391E79C66900582A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53C3463B1E79C66900582A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53C346401E79C66900582A16 /* AthenaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AthenaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C346441E79C66900582A16 /* AthenaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenaTests.swift; sourceTree = "<group>"; };
+		53C346461E79C66900582A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53C3464B1E79C66900582A16 /* AthenaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AthenaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C3464F1E79C66900582A16 /* AthenaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenaUITests.swift; sourceTree = "<group>"; };
+		53C346511E79C66900582A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53F0C42A1E9963E800AB30C9 /* Sdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sdk; sourceTree = "<group>"; };
+		53F0C42E1E99645200AB30C9 /* AWSCognitoIdentityProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognitoIdentityProvider.framework; path = Athena/Sdk/Aws/AWSCognitoIdentityProvider.framework; sourceTree = "<group>"; };
+		53F0C4321E99645E00AB30C9 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = Athena/Sdk/Aws/AWSCore.framework; sourceTree = "<group>"; };
+		53F0C4371E9964AD00AB30C9 /* AWSConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSConfiguration.swift; sourceTree = "<group>"; };
+		53F0C4381E9964AD00AB30C9 /* AWSMobileClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSMobileClient.swift; sourceTree = "<group>"; };
+		53F0C4391E9964AD00AB30C9 /* AWSMobileHubHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSMobileHubHelper.framework; sourceTree = "<group>"; };
+		53F0C4431E99664C00AB30C9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		53F0C4451E99666000AB30C9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		53F0C4471E9967E400AB30C9 /* UserIdentityAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdentityAccess.swift; sourceTree = "<group>"; };
+		53F0C44C1E99684C00AB30C9 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		53F0C44D1E99684C00AB30C9 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		53F0C44F1E99684C00AB30C9 /* SignInViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewControllerExtensions.swift; path = UserPools/SignInViewControllerExtensions.swift; sourceTree = "<group>"; };
+		53F0C4501E99684C00AB30C9 /* UserPoolForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		53F0C4511E99684C00AB30C9 /* UserPoolMFAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolMFAViewController.swift; sourceTree = "<group>"; };
+		53F0C4521E99684C00AB30C9 /* UserPoolNewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolNewPasswordViewController.swift; sourceTree = "<group>"; };
+		53F0C4531E99684C00AB30C9 /* UserPools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserPools.storyboard; sourceTree = "<group>"; };
+		53F0C4541E99684C00AB30C9 /* UserPoolSignUpConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolSignUpConfirmationViewController.swift; sourceTree = "<group>"; };
+		53F0C4551E99684C00AB30C9 /* UserPoolSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolSignUpViewController.swift; sourceTree = "<group>"; };
+		56533992CA241BD324829075 /* Pods-Athena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athena.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Athena/Pods-Athena.debug.xcconfig"; sourceTree = "<group>"; };
+		BC233B2BFA4A2F4F96883A51 /* Pods-Athena.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athena.release.xcconfig"; path = "Pods/Target Support Files/Pods-Athena/Pods-Athena.release.xcconfig"; sourceTree = "<group>"; };
+		DA242C411EA30ACC00573EE1 /* ATHBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHBackgroundView.swift; path = View/ATHBackgroundView.swift; sourceTree = "<group>"; };
+		DA242C421EA30ACC00573EE1 /* ATHBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHBaseView.swift; path = View/ATHBaseView.swift; sourceTree = "<group>"; };
+		DA242C431EA30ACC00573EE1 /* ATHBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHBlurView.swift; path = View/ATHBlurView.swift; sourceTree = "<group>"; };
+		DA242C441EA30ACC00573EE1 /* ATHFootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHFootView.swift; path = View/ATHFootView.swift; sourceTree = "<group>"; };
+		DA242C451EA30ACC00573EE1 /* ATHHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHHeadView.swift; path = View/ATHHeadView.swift; sourceTree = "<group>"; };
+		DA242C461EA30ACC00573EE1 /* ATHHintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHHintView.swift; path = View/ATHHintView.swift; sourceTree = "<group>"; };
+		DA242C471EA30ACC00573EE1 /* ATHInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHInputView.swift; path = View/ATHInputView.swift; sourceTree = "<group>"; };
+		DA242C481EA30ACC00573EE1 /* ATHLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHLabel.swift; path = View/ATHLabel.swift; sourceTree = "<group>"; };
+		DA242C491EA30ACC00573EE1 /* ATHLogButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHLogButton.swift; path = View/ATHLogButton.swift; sourceTree = "<group>"; };
+		DA242C4A1EA30ACC00573EE1 /* ATHRoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHRoundButton.swift; path = View/ATHRoundButton.swift; sourceTree = "<group>"; };
+		DA242C4B1EA30ACC00573EE1 /* ATHSignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHSignInView.swift; path = View/ATHSignInView.swift; sourceTree = "<group>"; };
+		DA242C4C1EA30ACC00573EE1 /* ATHTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHTextView.swift; path = View/ATHTextView.swift; sourceTree = "<group>"; };
+		DA242C5A1EA30AF000573EE1 /* ATHBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHBaseViewController.swift; path = ViewController/ATHBaseViewController.swift; sourceTree = "<group>"; };
+		DA242C5C1EA30AF000573EE1 /* ATHPracticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHPracticeViewController.swift; path = ViewController/ATHPracticeViewController.swift; sourceTree = "<group>"; };
+		DA242C5D1EA30AF000573EE1 /* ATHSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHSignUpViewController.swift; path = ViewController/ATHSignUpViewController.swift; sourceTree = "<group>"; };
+		DA242C631EA30B0F00573EE1 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = Resource/icon/Background.png; sourceTree = "<group>"; };
+		DA242C641EA30B0F00573EE1 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Resource/icon/logo.png; sourceTree = "<group>"; };
+		DA242C651EA30B0F00573EE1 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = Resource/icon/menu.png; sourceTree = "<group>"; };
+		DA242C661EA30B0F00573EE1 /* mic-en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mic-en.png"; path = "Resource/icon/mic-en.png"; sourceTree = "<group>"; };
+		DA242C671EA30B0F00573EE1 /* Nail your English speech pronunciation. copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Nail your English speech pronunciation. copy.png"; path = "Resource/icon/Nail your English speech pronunciation. copy.png"; sourceTree = "<group>"; };
+		DA242C681EA30B0F00573EE1 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Resource/icon/play.png; sourceTree = "<group>"; };
+		DA242C691EA30B0F00573EE1 /* return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = return.png; path = Resource/icon/return.png; sourceTree = "<group>"; };
+		DA242C6A1EA30B0F00573EE1 /* volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = volume.png; path = Resource/icon/volume.png; sourceTree = "<group>"; };
+		DA242C741EA30B2E00573EE1 /* STArchLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STArchLoading.swift; path = Category/STLoadingGroup/Loading/STArchLoading.swift; sourceTree = "<group>"; };
+		DA242C751EA30B2E00573EE1 /* STBouncyPreloaderLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STBouncyPreloaderLoading.swift; path = Category/STLoadingGroup/Loading/STBouncyPreloaderLoading.swift; sourceTree = "<group>"; };
+		DA242C761EA30B2E00573EE1 /* STGlassesLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STGlassesLoading.swift; path = Category/STLoadingGroup/Loading/STGlassesLoading.swift; sourceTree = "<group>"; };
+		DA242C771EA30B2E00573EE1 /* STPacManLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STPacManLoading.swift; path = Category/STLoadingGroup/Loading/STPacManLoading.swift; sourceTree = "<group>"; };
+		DA242C781EA30B2E00573EE1 /* STSubmitLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STSubmitLoading.swift; path = Category/STLoadingGroup/Loading/STSubmitLoading.swift; sourceTree = "<group>"; };
+		DA242C791EA30B2E00573EE1 /* STTriangleLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STTriangleLoading.swift; path = Category/STLoadingGroup/Loading/STTriangleLoading.swift; sourceTree = "<group>"; };
+		DA242C7A1EA30B2E00573EE1 /* STWalkLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STWalkLoading.swift; path = Category/STLoadingGroup/Loading/STWalkLoading.swift; sourceTree = "<group>"; };
+		DA242C7B1EA30B2E00573EE1 /* STZhiHuLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STZhiHuLoading.swift; path = Category/STLoadingGroup/Loading/STZhiHuLoading.swift; sourceTree = "<group>"; };
+		DA242C7C1EA30B2E00573EE1 /* STLoadingable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STLoadingable.swift; path = Category/STLoadingGroup/STLoadingable.swift; sourceTree = "<group>"; };
+		DA242C7D1EA30B2E00573EE1 /* STLoadingGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STLoadingGroup.swift; path = Category/STLoadingGroup/STLoadingGroup.swift; sourceTree = "<group>"; };
+		DA242C891EA30B5600573EE1 /* ATHMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATHMacro.swift; sourceTree = "<group>"; };
+		DA242C8D1EA30CB000573EE1 /* happy_face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy_face.png; path = Resource/icon/happy_face.png; sourceTree = "<group>"; };
+		DA242C8E1EA30CB000573EE1 /* neutral_face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = neutral_face.png; path = Resource/icon/neutral_face.png; sourceTree = "<group>"; };
+		DA242C8F1EA30CB000573EE1 /* sad_face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sad_face.png; path = Resource/icon/sad_face.png; sourceTree = "<group>"; };
+		DA242C901EA30CB000573EE1 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Resource/icon/back.png; sourceTree = "<group>"; };
+		DA242C911EA30CB000573EE1 /* OK_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OK_hand.png; path = Resource/icon/OK_hand.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53C346291E79C66900582A16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F0C4461E99666000AB30C9 /* libsqlite3.tbd in Frameworks */,
+				53F0C4441E99664C00AB30C9 /* libz.tbd in Frameworks */,
+				53F0C42F1E99645200AB30C9 /* AWSCognitoIdentityProvider.framework in Frameworks */,
+				53F0C4401E9964AD00AB30C9 /* AWSMobileHubHelper.framework in Frameworks */,
+				53F0C4331E99645E00AB30C9 /* AWSCore.framework in Frameworks */,
+				1CB6FAFB97E7965B038BFDEB /* Pods_Athena.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C3463D1E79C66900582A16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F0C4411E9964AD00AB30C9 /* AWSMobileHubHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C346481E79C66900582A16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F0C4421E9964AD00AB30C9 /* AWSMobileHubHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B0679BB3246AF266556C0E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F0C4451E99666000AB30C9 /* libsqlite3.tbd */,
+				53F0C4431E99664C00AB30C9 /* libz.tbd */,
+				227D82F6DEC828C1000889EC /* Pods_Athena.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53C346231E79C66900582A16 = {
+			isa = PBXGroup;
+			children = (
+				53F0C4321E99645E00AB30C9 /* AWSCore.framework */,
+				53F0C42E1E99645200AB30C9 /* AWSCognitoIdentityProvider.framework */,
+				53C3462E1E79C66900582A16 /* Athena */,
+				53C346431E79C66900582A16 /* AthenaTests */,
+				53C3464E1E79C66900582A16 /* AthenaUITests */,
+				53C3462D1E79C66900582A16 /* Products */,
+				3B0679BB3246AF266556C0E4 /* Frameworks */,
+				B5127B9810B6C3F7B7CA1AC1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		53C3462D1E79C66900582A16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53C3462C1E79C66900582A16 /* Athena.app */,
+				53C346401E79C66900582A16 /* AthenaTests.xctest */,
+				53C3464B1E79C66900582A16 /* AthenaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53C3462E1E79C66900582A16 /* Athena */ = {
+			isa = PBXGroup;
+			children = (
+				DA242C891EA30B5600573EE1 /* ATHMacro.swift */,
+				DA242C8B1EA30BB300573EE1 /* Utils */,
+				DA242C731EA30B1600573EE1 /* Resources */,
+				DA242C621EA30AFA00573EE1 /* ViewControllers */,
+				DA242C591EA30AD500573EE1 /* Views */,
+				53F0C44B1E99684C00AB30C9 /* SignIn */,
+				53F0C4361E9964AD00AB30C9 /* AmazonAws */,
+				53F0C42A1E9963E800AB30C9 /* Sdk */,
+				53C3462F1E79C66900582A16 /* AppDelegate.swift */,
+				5336E2F71EA2A7B000E670EF /* DownPicker-Bridging-Header.h */,
+				53F0C4471E9967E400AB30C9 /* UserIdentityAccess.swift */,
+				534B1D401E95878D00A309D3 /* AudioController.swift */,
+				534B1D421E9587E400A309D3 /* Speech-Bridging-Header.h */,
+				534B1D431E95882500A309D3 /* SpeechRecognitionService.swift */,
+				53C346311E79C66900582A16 /* MainViewController.swift */,
+				DA242C8C1EA30BCA00573EE1 /* SupportFiles */,
+				53C346361E79C66900582A16 /* Assets.xcassets */,
+				DA242C881EA30B3300573EE1 /* STLoading */,
+			);
+			path = Athena;
+			sourceTree = "<group>";
+		};
+		53C346431E79C66900582A16 /* AthenaTests */ = {
+			isa = PBXGroup;
+			children = (
+				53C346441E79C66900582A16 /* AthenaTests.swift */,
+				53C346461E79C66900582A16 /* Info.plist */,
+			);
+			path = AthenaTests;
+			sourceTree = "<group>";
+		};
+		53C3464E1E79C66900582A16 /* AthenaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53C3464F1E79C66900582A16 /* AthenaUITests.swift */,
+				53C346511E79C66900582A16 /* Info.plist */,
+			);
+			path = AthenaUITests;
+			sourceTree = "<group>";
+		};
+		53F0C4361E9964AD00AB30C9 /* AmazonAws */ = {
+			isa = PBXGroup;
+			children = (
+				53F0C4371E9964AD00AB30C9 /* AWSConfiguration.swift */,
+				53F0C4381E9964AD00AB30C9 /* AWSMobileClient.swift */,
+				53F0C4391E9964AD00AB30C9 /* AWSMobileHubHelper.framework */,
+			);
+			path = AmazonAws;
+			sourceTree = "<group>";
+		};
+		53F0C44B1E99684C00AB30C9 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				53F0C44C1E99684C00AB30C9 /* SignIn.storyboard */,
+				53F0C44D1E99684C00AB30C9 /* SignInViewController.swift */,
+				53F0C44F1E99684C00AB30C9 /* SignInViewControllerExtensions.swift */,
+				53F0C44E1E99684C00AB30C9 /* UserPools */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		53F0C44E1E99684C00AB30C9 /* UserPools */ = {
+			isa = PBXGroup;
+			children = (
+				53F0C4501E99684C00AB30C9 /* UserPoolForgotPasswordViewController.swift */,
+				53F0C4511E99684C00AB30C9 /* UserPoolMFAViewController.swift */,
+				53F0C4521E99684C00AB30C9 /* UserPoolNewPasswordViewController.swift */,
+				53F0C4531E99684C00AB30C9 /* UserPools.storyboard */,
+				53F0C4541E99684C00AB30C9 /* UserPoolSignUpConfirmationViewController.swift */,
+				53F0C4551E99684C00AB30C9 /* UserPoolSignUpViewController.swift */,
+			);
+			path = UserPools;
+			sourceTree = "<group>";
+		};
+		B5127B9810B6C3F7B7CA1AC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56533992CA241BD324829075 /* Pods-Athena.debug.xcconfig */,
+				BC233B2BFA4A2F4F96883A51 /* Pods-Athena.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA242C591EA30AD500573EE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA242C411EA30ACC00573EE1 /* ATHBackgroundView.swift */,
+				DA242C421EA30ACC00573EE1 /* ATHBaseView.swift */,
+				DA242C431EA30ACC00573EE1 /* ATHBlurView.swift */,
+				DA242C441EA30ACC00573EE1 /* ATHFootView.swift */,
+				DA242C451EA30ACC00573EE1 /* ATHHeadView.swift */,
+				DA242C461EA30ACC00573EE1 /* ATHHintView.swift */,
+				DA242C471EA30ACC00573EE1 /* ATHInputView.swift */,
+				DA242C481EA30ACC00573EE1 /* ATHLabel.swift */,
+				DA242C491EA30ACC00573EE1 /* ATHLogButton.swift */,
+				DA242C4A1EA30ACC00573EE1 /* ATHRoundButton.swift */,
+				DA242C4B1EA30ACC00573EE1 /* ATHSignInView.swift */,
+				DA242C4C1EA30ACC00573EE1 /* ATHTextView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DA242C621EA30AFA00573EE1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA242C5A1EA30AF000573EE1 /* ATHBaseViewController.swift */,
+				DA242C5C1EA30AF000573EE1 /* ATHPracticeViewController.swift */,
+				DA242C5D1EA30AF000573EE1 /* ATHSignUpViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DA242C731EA30B1600573EE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA242C8D1EA30CB000573EE1 /* happy_face.png */,
+				DA242C8E1EA30CB000573EE1 /* neutral_face.png */,
+				DA242C8F1EA30CB000573EE1 /* sad_face.png */,
+				DA242C901EA30CB000573EE1 /* back.png */,
+				DA242C911EA30CB000573EE1 /* OK_hand.png */,
+				DA242C631EA30B0F00573EE1 /* Background.png */,
+				DA242C641EA30B0F00573EE1 /* logo.png */,
+				DA242C651EA30B0F00573EE1 /* menu.png */,
+				DA242C661EA30B0F00573EE1 /* mic-en.png */,
+				DA242C671EA30B0F00573EE1 /* Nail your English speech pronunciation. copy.png */,
+				DA242C681EA30B0F00573EE1 /* play.png */,
+				DA242C691EA30B0F00573EE1 /* return.png */,
+				DA242C6A1EA30B0F00573EE1 /* volume.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DA242C881EA30B3300573EE1 /* STLoading */ = {
+			isa = PBXGroup;
+			children = (
+				DA242C741EA30B2E00573EE1 /* STArchLoading.swift */,
+				DA242C751EA30B2E00573EE1 /* STBouncyPreloaderLoading.swift */,
+				DA242C761EA30B2E00573EE1 /* STGlassesLoading.swift */,
+				DA242C771EA30B2E00573EE1 /* STPacManLoading.swift */,
+				DA242C781EA30B2E00573EE1 /* STSubmitLoading.swift */,
+				DA242C791EA30B2E00573EE1 /* STTriangleLoading.swift */,
+				DA242C7A1EA30B2E00573EE1 /* STWalkLoading.swift */,
+				DA242C7B1EA30B2E00573EE1 /* STZhiHuLoading.swift */,
+				DA242C7C1EA30B2E00573EE1 /* STLoadingable.swift */,
+				DA242C7D1EA30B2E00573EE1 /* STLoadingGroup.swift */,
+			);
+			name = STLoading;
+			sourceTree = "<group>";
+		};
+		DA242C8B1EA30BB300573EE1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				534B1D451E95948C00A309D3 /* EvaluationBrain.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		DA242C8C1EA30BCA00573EE1 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				53C346381E79C66900582A16 /* LaunchScreen.storyboard */,
+				53C346331E79C66900582A16 /* Main.storyboard */,
+				53C3463B1E79C66900582A16 /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53C3462B1E79C66900582A16 /* Athena */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53C346541E79C66900582A16 /* Build configuration list for PBXNativeTarget "Athena" */;
+			buildPhases = (
+				91895C39C3D0EFB6FA52A2DE /* [CP] Check Pods Manifest.lock */,
+				53C346281E79C66900582A16 /* Sources */,
+				53C346291E79C66900582A16 /* Frameworks */,
+				53C3462A1E79C66900582A16 /* Resources */,
+				53F0C4311E99645200AB30C9 /* Embed Frameworks */,
+				53F0C4351E99647E00AB30C9 /* ShellScript */,
+				FFB89FB356308D740D08A2E4 /* [CP] Embed Pods Frameworks */,
+				C0A51CE1A2D9C87F8DBC6CA5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Athena;
+			productName = Athena;
+			productReference = 53C3462C1E79C66900582A16 /* Athena.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53C3463F1E79C66900582A16 /* AthenaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53C346571E79C66900582A16 /* Build configuration list for PBXNativeTarget "AthenaTests" */;
+			buildPhases = (
+				53C3463C1E79C66900582A16 /* Sources */,
+				53C3463D1E79C66900582A16 /* Frameworks */,
+				53C3463E1E79C66900582A16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53C346421E79C66900582A16 /* PBXTargetDependency */,
+			);
+			name = AthenaTests;
+			productName = AthenaTests;
+			productReference = 53C346401E79C66900582A16 /* AthenaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53C3464A1E79C66900582A16 /* AthenaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53C3465A1E79C66900582A16 /* Build configuration list for PBXNativeTarget "AthenaUITests" */;
+			buildPhases = (
+				53C346471E79C66900582A16 /* Sources */,
+				53C346481E79C66900582A16 /* Frameworks */,
+				53C346491E79C66900582A16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53C3464D1E79C66900582A16 /* PBXTargetDependency */,
+			);
+			name = AthenaUITests;
+			productName = AthenaUITests;
+			productReference = 53C3464B1E79C66900582A16 /* AthenaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53C346241E79C66900582A16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Laura Bochenek";
+				TargetAttributes = {
+					53C3462B1E79C66900582A16 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					53C3463F1E79C66900582A16 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 53C3462B1E79C66900582A16;
+					};
+					53C3464A1E79C66900582A16 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 53C3462B1E79C66900582A16;
+					};
+				};
+			};
+			buildConfigurationList = 53C346271E79C66900582A16 /* Build configuration list for PBXProject "Athena" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53C346231E79C66900582A16;
+			productRefGroup = 53C3462D1E79C66900582A16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53C3462B1E79C66900582A16 /* Athena */,
+				53C3463F1E79C66900582A16 /* AthenaTests */,
+				53C3464A1E79C66900582A16 /* AthenaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53C3462A1E79C66900582A16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA242C961EA30CB000573EE1 /* OK_hand.png in Resources */,
+				53C3463A1E79C66900582A16 /* LaunchScreen.storyboard in Resources */,
+				53F0C4561E99684C00AB30C9 /* SignIn.storyboard in Resources */,
+				DA242C951EA30CB000573EE1 /* back.png in Resources */,
+				DA242C6D1EA30B0F00573EE1 /* menu.png in Resources */,
+				DA242C941EA30CB000573EE1 /* sad_face.png in Resources */,
+				DA242C921EA30CB000573EE1 /* happy_face.png in Resources */,
+				53F0C42B1E9963E800AB30C9 /* Sdk in Resources */,
+				DA242C6F1EA30B0F00573EE1 /* Nail your English speech pronunciation. copy.png in Resources */,
+				DA242C701EA30B0F00573EE1 /* play.png in Resources */,
+				DA242C711EA30B0F00573EE1 /* return.png in Resources */,
+				DA242C6B1EA30B0F00573EE1 /* Background.png in Resources */,
+				DA242C6C1EA30B0F00573EE1 /* logo.png in Resources */,
+				DA242C721EA30B0F00573EE1 /* volume.png in Resources */,
+				DA242C6E1EA30B0F00573EE1 /* mic-en.png in Resources */,
+				DA242C931EA30CB000573EE1 /* neutral_face.png in Resources */,
+				53C346371E79C66900582A16 /* Assets.xcassets in Resources */,
+				53C346351E79C66900582A16 /* Main.storyboard in Resources */,
+				53F0C4681E99684C00AB30C9 /* UserPools.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C3463E1E79C66900582A16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F0C4571E99684C00AB30C9 /* SignIn.storyboard in Resources */,
+				53F0C42C1E9963E800AB30C9 /* Sdk in Resources */,
+				53F0C4691E99684C00AB30C9 /* UserPools.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C346491E79C66900582A16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F0C4581E99684C00AB30C9 /* SignIn.storyboard in Resources */,
+				53F0C42D1E9963E800AB30C9 /* Sdk in Resources */,
+				53F0C46A1E99684C00AB30C9 /* UserPools.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53F0C4351E99647E00AB30C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
+		};
+		91895C39C3D0EFB6FA52A2DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0A51CE1A2D9C87F8DBC6CA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Athena/Pods-Athena-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFB89FB356308D740D08A2E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Athena/Pods-Athena-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53C346281E79C66900582A16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA242C871EA30B2E00573EE1 /* STLoadingGroup.swift in Sources */,
+				53F0C4481E9967E400AB30C9 /* UserIdentityAccess.swift in Sources */,
+				534B1D441E95882500A309D3 /* SpeechRecognitionService.swift in Sources */,
+				53C346321E79C66900582A16 /* MainViewController.swift in Sources */,
+				DA242C541EA30ACC00573EE1 /* ATHLabel.swift in Sources */,
+				DA242C831EA30B2E00573EE1 /* STTriangleLoading.swift in Sources */,
+				53F0C43D1E9964AD00AB30C9 /* AWSMobileClient.swift in Sources */,
+				DA242C5E1EA30AF000573EE1 /* ATHBaseViewController.swift in Sources */,
+				53F0C45C1E99684C00AB30C9 /* SignInViewControllerExtensions.swift in Sources */,
+				DA242C4E1EA30ACC00573EE1 /* ATHBaseView.swift in Sources */,
+				53F0C4651E99684C00AB30C9 /* UserPoolNewPasswordViewController.swift in Sources */,
+				DA242C551EA30ACC00573EE1 /* ATHLogButton.swift in Sources */,
+				53F0C45F1E99684C00AB30C9 /* UserPoolForgotPasswordViewController.swift in Sources */,
+				53F0C46E1E99684C00AB30C9 /* UserPoolSignUpViewController.swift in Sources */,
+				53F0C4621E99684C00AB30C9 /* UserPoolMFAViewController.swift in Sources */,
+				534B1D461E95948C00A309D3 /* EvaluationBrain.swift in Sources */,
+				DA242C811EA30B2E00573EE1 /* STPacManLoading.swift in Sources */,
+				DA242C531EA30ACC00573EE1 /* ATHInputView.swift in Sources */,
+				DA242C4D1EA30ACC00573EE1 /* ATHBackgroundView.swift in Sources */,
+				DA242C501EA30ACC00573EE1 /* ATHFootView.swift in Sources */,
+				DA242C8A1EA30B5600573EE1 /* ATHMacro.swift in Sources */,
+				DA242C7E1EA30B2E00573EE1 /* STArchLoading.swift in Sources */,
+				DA242C801EA30B2E00573EE1 /* STGlassesLoading.swift in Sources */,
+				DA242C571EA30ACC00573EE1 /* ATHSignInView.swift in Sources */,
+				DA242C821EA30B2E00573EE1 /* STSubmitLoading.swift in Sources */,
+				53F0C46B1E99684C00AB30C9 /* UserPoolSignUpConfirmationViewController.swift in Sources */,
+				53F0C43A1E9964AD00AB30C9 /* AWSConfiguration.swift in Sources */,
+				53C346301E79C66900582A16 /* AppDelegate.swift in Sources */,
+				534B1D411E95878D00A309D3 /* AudioController.swift in Sources */,
+				DA242C561EA30ACC00573EE1 /* ATHRoundButton.swift in Sources */,
+				53F0C4591E99684C00AB30C9 /* SignInViewController.swift in Sources */,
+				DA242C581EA30ACC00573EE1 /* ATHTextView.swift in Sources */,
+				DA242C7F1EA30B2E00573EE1 /* STBouncyPreloaderLoading.swift in Sources */,
+				DA242C521EA30ACC00573EE1 /* ATHHintView.swift in Sources */,
+				DA242C841EA30B2E00573EE1 /* STWalkLoading.swift in Sources */,
+				DA242C511EA30ACC00573EE1 /* ATHHeadView.swift in Sources */,
+				DA242C4F1EA30ACC00573EE1 /* ATHBlurView.swift in Sources */,
+				DA242C851EA30B2E00573EE1 /* STZhiHuLoading.swift in Sources */,
+				DA242C611EA30AF000573EE1 /* ATHSignUpViewController.swift in Sources */,
+				DA242C601EA30AF000573EE1 /* ATHPracticeViewController.swift in Sources */,
+				DA242C861EA30B2E00573EE1 /* STLoadingable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C3463C1E79C66900582A16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F0C43B1E9964AD00AB30C9 /* AWSConfiguration.swift in Sources */,
+				53C346451E79C66900582A16 /* AthenaTests.swift in Sources */,
+				53F0C4661E99684C00AB30C9 /* UserPoolNewPasswordViewController.swift in Sources */,
+				53F0C4491E9967E400AB30C9 /* UserIdentityAccess.swift in Sources */,
+				53F0C46F1E99684C00AB30C9 /* UserPoolSignUpViewController.swift in Sources */,
+				53F0C46C1E99684C00AB30C9 /* UserPoolSignUpConfirmationViewController.swift in Sources */,
+				53F0C4601E99684C00AB30C9 /* UserPoolForgotPasswordViewController.swift in Sources */,
+				53F0C45A1E99684C00AB30C9 /* SignInViewController.swift in Sources */,
+				53F0C45D1E99684C00AB30C9 /* SignInViewControllerExtensions.swift in Sources */,
+				53F0C4631E99684C00AB30C9 /* UserPoolMFAViewController.swift in Sources */,
+				53F0C43E1E9964AD00AB30C9 /* AWSMobileClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C346471E79C66900582A16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F0C43C1E9964AD00AB30C9 /* AWSConfiguration.swift in Sources */,
+				53C346501E79C66900582A16 /* AthenaUITests.swift in Sources */,
+				53F0C4671E99684C00AB30C9 /* UserPoolNewPasswordViewController.swift in Sources */,
+				53F0C44A1E9967E400AB30C9 /* UserIdentityAccess.swift in Sources */,
+				53F0C4701E99684C00AB30C9 /* UserPoolSignUpViewController.swift in Sources */,
+				53F0C46D1E99684C00AB30C9 /* UserPoolSignUpConfirmationViewController.swift in Sources */,
+				53F0C4611E99684C00AB30C9 /* UserPoolForgotPasswordViewController.swift in Sources */,
+				53F0C45B1E99684C00AB30C9 /* SignInViewController.swift in Sources */,
+				53F0C45E1E99684C00AB30C9 /* SignInViewControllerExtensions.swift in Sources */,
+				53F0C4641E99684C00AB30C9 /* UserPoolMFAViewController.swift in Sources */,
+				53F0C43F1E9964AD00AB30C9 /* AWSMobileClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53C346421E79C66900582A16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53C3462B1E79C66900582A16 /* Athena */;
+			targetProxy = 53C346411E79C66900582A16 /* PBXContainerItemProxy */;
+		};
+		53C3464D1E79C66900582A16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53C3462B1E79C66900582A16 /* Athena */;
+			targetProxy = 53C3464C1E79C66900582A16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53C346331E79C66900582A16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C346341E79C66900582A16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53C346381E79C66900582A16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C346391E79C66900582A16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53C346521E79C66900582A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53C346531E79C66900582A16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53C346551E79C66900582A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56533992CA241BD324829075 /* Pods-Athena.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Athena/Sdk/Aws",
+					"$(PROJECT_DIR)/Athena/AmazonAws",
+				);
+				INFOPLIST_FILE = Athena/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UR.Athena;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		53C346561E79C66900582A16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC233B2BFA4A2F4F96883A51 /* Pods-Athena.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Athena/Sdk/Aws",
+					"$(PROJECT_DIR)/Athena/AmazonAws",
+				);
+				INFOPLIST_FILE = Athena/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UR.Athena;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		53C346581E79C66900582A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Athena/AmazonAws",
+				);
+				INFOPLIST_FILE = AthenaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UR.AthenaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Athena.app/Athena";
+			};
+			name = Debug;
+		};
+		53C346591E79C66900582A16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Athena/AmazonAws",
+				);
+				INFOPLIST_FILE = AthenaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UR.AthenaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Athena.app/Athena";
+			};
+			name = Release;
+		};
+		53C3465B1E79C66900582A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Athena/AmazonAws",
+				);
+				INFOPLIST_FILE = AthenaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UR.AthenaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Athena;
+			};
+			name = Debug;
+		};
+		53C3465C1E79C66900582A16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Athena/AmazonAws",
+				);
+				INFOPLIST_FILE = AthenaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UR.AthenaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Athena;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53C346271E79C66900582A16 /* Build configuration list for PBXProject "Athena" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C346521E79C66900582A16 /* Debug */,
+				53C346531E79C66900582A16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53C346541E79C66900582A16 /* Build configuration list for PBXNativeTarget "Athena" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C346551E79C66900582A16 /* Debug */,
+				53C346561E79C66900582A16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53C346571E79C66900582A16 /* Build configuration list for PBXNativeTarget "AthenaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C346581E79C66900582A16 /* Debug */,
+				53C346591E79C66900582A16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53C3465A1E79C66900582A16 /* Build configuration list for PBXNativeTarget "AthenaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C3465B1E79C66900582A16 /* Debug */,
+				53C3465C1E79C66900582A16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53C346241E79C66900582A16 /* Project object */;
+}
