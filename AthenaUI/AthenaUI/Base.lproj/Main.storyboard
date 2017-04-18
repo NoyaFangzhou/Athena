@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bl9-Yg-vGq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1uq-T3-Llj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,26 +26,35 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="aiM-WY-LaV">
-                                        <rect key="frame" x="98" y="50" width="178" height="227"/>
+                                        <rect key="frame" x="53" y="50" width="268" height="227"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qR7-un-2VJ">
+                                        <rect key="frame" x="126" y="532" width="123" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Forget Password?">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="X46-Os-Y5T"/>
                     <connections>
                         <outlet property="scrollView" destination="2M4-fl-6oZ" id="iwc-AE-jaO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-794.39999999999998" y="-318.89055472263868"/>
+            <point key="canvasLocation" x="144.80000000000001" y="-318.89055472263868"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Sj9-zB-UGx">
             <objects>
-                <viewController id="q7I-0j-PlE" customClass="ATHSignUpViewController" customModule="AthenaUI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ATHSignUpViewController" id="q7I-0j-PlE" customClass="ATHSignUpViewController" customModule="AthenaUI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bPY-HP-2it"/>
                         <viewControllerLayoutGuide type="bottom" id="XJQ-rV-XuC"/>
@@ -85,7 +94,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43M-Mw-OTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="-319"/>
+            <point key="canvasLocation" x="916" y="-319.79010494752629"/>
+        </scene>
+        <!--Secure Code View Controller-->
+        <scene sceneID="86x-3j-gm5">
+            <objects>
+                <viewController id="1J6-Tr-OMc" customClass="ATHSecureCodeViewController" customModule="AthenaUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="erb-OK-0d5"/>
+                        <viewControllerLayoutGuide type="bottom" id="VHD-SK-1q7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b5W-32-LAO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCP-MZ-fi9">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wonderful, Thanks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asf-sY-VIS">
+                                        <rect key="frame" x="29" y="153" width="317" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OK_hand.png" translatesAutoresizingMaskIntoConstraints="NO" id="1yu-bY-AjV">
+                                        <rect key="frame" x="157" y="69" width="61" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="nCP-MZ-fi9" id="Ctd-g5-BKS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJ9-x4-8u2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1879.2" y="-553.67316341829087"/>
         </scene>
         <!--Practice View Controller-->
         <scene sceneID="8Kk-6m-xYk">
@@ -105,8 +154,27 @@
             </objects>
             <point key="canvasLocation" x="859" y="437"/>
         </scene>
+        <!--Cube Navigation Controller-->
+        <scene sceneID="gDT-RM-yGl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1uq-T3-Llj" customClass="CubeNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2GS-8i-kvs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LOu-Jt-ewZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sC6-GM-GLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-794.39999999999998" y="-318.89055472263868"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="logo.png" width="300" height="379"/>
+        <image name="OK_hand.png" width="76" height="102"/>
+        <image name="logo.png" width="541" height="443"/>
     </resources>
 </document>

@@ -31,6 +31,17 @@
 		DA6B66C51E9F0DB80061E731 /* AthenaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B66C41E9F0DB80061E731 /* AthenaUITests.swift */; };
 		DA6B66D01E9F0DB80061E731 /* AthenaUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B66CF1E9F0DB80061E731 /* AthenaUIUITests.swift */; };
 		DA6B66E01E9F130A0061E731 /* ATHMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B66DF1E9F130A0061E731 /* ATHMacro.swift */; };
+		DA7EFDF71EA56A2300EB8ABC /* ATHSecureCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EFDF61EA56A2300EB8ABC /* ATHSecureCodeViewController.swift */; };
+		DA7EFDFD1EA56AA200EB8ABC /* happy_face.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7EFDF81EA56AA200EB8ABC /* happy_face.png */; };
+		DA7EFDFE1EA56AA200EB8ABC /* neutral_face.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7EFDF91EA56AA200EB8ABC /* neutral_face.png */; };
+		DA7EFDFF1EA56AA200EB8ABC /* sad_face.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7EFDFA1EA56AA200EB8ABC /* sad_face.png */; };
+		DA7EFE001EA56AA200EB8ABC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7EFDFB1EA56AA200EB8ABC /* back.png */; };
+		DA7EFE011EA56AA200EB8ABC /* OK_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7EFDFC1EA56AA200EB8ABC /* OK_hand.png */; };
+		DA7EFE731EA578F700EB8ABC /* NSObject+ABExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7EFE6C1EA578F700EB8ABC /* NSObject+ABExtras.m */; };
+		DA7EFE741EA578F700EB8ABC /* UIImageView+ABExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7EFE6E1EA578F700EB8ABC /* UIImageView+ABExtras.m */; };
+		DA7EFE751EA578F700EB8ABC /* UINavigationController+ABExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7EFE701EA578F700EB8ABC /* UINavigationController+ABExtras.m */; };
+		DA7EFE761EA578F700EB8ABC /* UIView+ABExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7EFE721EA578F700EB8ABC /* UIView+ABExtras.m */; };
+		DA7EFE7A1EA5799500EB8ABC /* CubeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7EFE791EA5799500EB8ABC /* CubeNavigationController.m */; };
 		DA9A35201EA15D5000A2F333 /* ATHPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A351F1EA15D5000A2F333 /* ATHPracticeViewController.swift */; };
 		DA9A35221EA15EDA00A2F333 /* ATHBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A35211EA15EDA00A2F333 /* ATHBackgroundView.swift */; };
 		DA9A35241EA1602800A2F333 /* ATHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A35231EA1602800A2F333 /* ATHTextView.swift */; };
@@ -99,6 +110,23 @@
 		DA6B66CF1E9F0DB80061E731 /* AthenaUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenaUIUITests.swift; sourceTree = "<group>"; };
 		DA6B66D11E9F0DB80061E731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6B66DF1E9F130A0061E731 /* ATHMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATHMacro.swift; sourceTree = "<group>"; };
+		DA7EFDF61EA56A2300EB8ABC /* ATHSecureCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHSecureCodeViewController.swift; path = ViewController/ATHSecureCodeViewController.swift; sourceTree = "<group>"; };
+		DA7EFDF81EA56AA200EB8ABC /* happy_face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy_face.png; path = Resource/icon/happy_face.png; sourceTree = "<group>"; };
+		DA7EFDF91EA56AA200EB8ABC /* neutral_face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = neutral_face.png; path = Resource/icon/neutral_face.png; sourceTree = "<group>"; };
+		DA7EFDFA1EA56AA200EB8ABC /* sad_face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sad_face.png; path = Resource/icon/sad_face.png; sourceTree = "<group>"; };
+		DA7EFDFB1EA56AA200EB8ABC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Resource/icon/back.png; sourceTree = "<group>"; };
+		DA7EFDFC1EA56AA200EB8ABC /* OK_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OK_hand.png; path = Resource/icon/OK_hand.png; sourceTree = "<group>"; };
+		DA7EFE6A1EA578F600EB8ABC /* AthenaUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AthenaUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA7EFE6B1EA578F700EB8ABC /* NSObject+ABExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+ABExtras.h"; path = "Category/Categories/NSObject+ABExtras.h"; sourceTree = "<group>"; };
+		DA7EFE6C1EA578F700EB8ABC /* NSObject+ABExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ABExtras.m"; path = "Category/Categories/NSObject+ABExtras.m"; sourceTree = "<group>"; };
+		DA7EFE6D1EA578F700EB8ABC /* UIImageView+ABExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+ABExtras.h"; path = "Category/Categories/UIImageView+ABExtras.h"; sourceTree = "<group>"; };
+		DA7EFE6E1EA578F700EB8ABC /* UIImageView+ABExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+ABExtras.m"; path = "Category/Categories/UIImageView+ABExtras.m"; sourceTree = "<group>"; };
+		DA7EFE6F1EA578F700EB8ABC /* UINavigationController+ABExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+ABExtras.h"; path = "Category/Categories/UINavigationController+ABExtras.h"; sourceTree = "<group>"; };
+		DA7EFE701EA578F700EB8ABC /* UINavigationController+ABExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+ABExtras.m"; path = "Category/Categories/UINavigationController+ABExtras.m"; sourceTree = "<group>"; };
+		DA7EFE711EA578F700EB8ABC /* UIView+ABExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ABExtras.h"; path = "Category/Categories/UIView+ABExtras.h"; sourceTree = "<group>"; };
+		DA7EFE721EA578F700EB8ABC /* UIView+ABExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ABExtras.m"; path = "Category/Categories/UIView+ABExtras.m"; sourceTree = "<group>"; };
+		DA7EFE781EA5799500EB8ABC /* CubeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubeNavigationController.h; path = Category/CubeNavigation/CubeNavigationController.h; sourceTree = "<group>"; };
+		DA7EFE791EA5799500EB8ABC /* CubeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CubeNavigationController.m; path = Category/CubeNavigation/CubeNavigationController.m; sourceTree = "<group>"; };
 		DA9A351F1EA15D5000A2F333 /* ATHPracticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHPracticeViewController.swift; path = ViewController/ATHPracticeViewController.swift; sourceTree = "<group>"; };
 		DA9A35211EA15EDA00A2F333 /* ATHBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHBackgroundView.swift; path = View/ATHBackgroundView.swift; sourceTree = "<group>"; };
 		DA9A35231EA1602800A2F333 /* ATHTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATHTextView.swift; path = View/ATHTextView.swift; sourceTree = "<group>"; };
@@ -174,6 +202,11 @@
 		DA1157B31EA01CAF0015C41B /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				DA7EFDF81EA56AA200EB8ABC /* happy_face.png */,
+				DA7EFDF91EA56AA200EB8ABC /* neutral_face.png */,
+				DA7EFDFA1EA56AA200EB8ABC /* sad_face.png */,
+				DA7EFDFB1EA56AA200EB8ABC /* back.png */,
+				DA7EFDFC1EA56AA200EB8ABC /* OK_hand.png */,
 				DA9A35251EA1644400A2F333 /* menu.png */,
 				DA1157E11EA032A20015C41B /* logo.png */,
 				DA1157E21EA032A20015C41B /* Background.png */,
@@ -189,7 +222,10 @@
 		DA1157BE1EA01EE40015C41B /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				DA7EFE7B1EA579A000EB8ABC /* CubeNavigationViewController */,
+				DA7EFE771EA5798200EB8ABC /* Categories */,
 				DA9A353D1EA17DD800A2F333 /* STLoading */,
+				DA7EFE6A1EA578F600EB8ABC /* AthenaUI-Bridging-Header.h */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -201,6 +237,7 @@
 				DA1157E91EA042760015C41B /* ATHMainViewController.swift */,
 				DA1157EF1EA06B9E0015C41B /* ATHSignUpViewController.swift */,
 				DA9A351F1EA15D5000A2F333 /* ATHPracticeViewController.swift */,
+				DA7EFDF61EA56A2300EB8ABC /* ATHSecureCodeViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -267,6 +304,30 @@
 				DA6B66D11E9F0DB80061E731 /* Info.plist */,
 			);
 			path = AthenaUIUITests;
+			sourceTree = "<group>";
+		};
+		DA7EFE771EA5798200EB8ABC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EFE6B1EA578F700EB8ABC /* NSObject+ABExtras.h */,
+				DA7EFE6C1EA578F700EB8ABC /* NSObject+ABExtras.m */,
+				DA7EFE6D1EA578F700EB8ABC /* UIImageView+ABExtras.h */,
+				DA7EFE6E1EA578F700EB8ABC /* UIImageView+ABExtras.m */,
+				DA7EFE6F1EA578F700EB8ABC /* UINavigationController+ABExtras.h */,
+				DA7EFE701EA578F700EB8ABC /* UINavigationController+ABExtras.m */,
+				DA7EFE711EA578F700EB8ABC /* UIView+ABExtras.h */,
+				DA7EFE721EA578F700EB8ABC /* UIView+ABExtras.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		DA7EFE7B1EA579A000EB8ABC /* CubeNavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EFE781EA5799500EB8ABC /* CubeNavigationController.h */,
+				DA7EFE791EA5799500EB8ABC /* CubeNavigationController.m */,
+			);
+			name = CubeNavigationViewController;
 			sourceTree = "<group>";
 		};
 		DA9A353D1EA17DD800A2F333 /* STLoading */ = {
@@ -355,6 +416,7 @@
 					DA6B66AB1E9F0DB80061E731 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RRG9X53X93;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					DA6B66BF1E9F0DB80061E731 = {
@@ -398,15 +460,20 @@
 			files = (
 				DA6B66BA1E9F0DB80061E731 /* LaunchScreen.storyboard in Resources */,
 				DA1157D41EA022F20015C41B /* play.png in Resources */,
+				DA7EFE011EA56AA200EB8ABC /* OK_hand.png in Resources */,
 				DA1157E81EA032A20015C41B /* mic-en.png in Resources */,
 				DA1157E51EA032A20015C41B /* logo.png in Resources */,
 				DA1157D31EA022F20015C41B /* volume.png in Resources */,
+				DA7EFDFE1EA56AA200EB8ABC /* neutral_face.png in Resources */,
 				DA1157E71EA032A20015C41B /* Nail your English speech pronunciation. copy.png in Resources */,
 				DA6B66B71E9F0DB80061E731 /* Assets.xcassets in Resources */,
 				DA9A35261EA1644400A2F333 /* menu.png in Resources */,
 				DA6B66B51E9F0DB80061E731 /* Main.storyboard in Resources */,
+				DA7EFDFD1EA56AA200EB8ABC /* happy_face.png in Resources */,
+				DA7EFE001EA56AA200EB8ABC /* back.png in Resources */,
 				DA1157E61EA032A20015C41B /* Background.png in Resources */,
 				DA1157D21EA022F20015C41B /* return.png in Resources */,
+				DA7EFDFF1EA56AA200EB8ABC /* sad_face.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,10 +499,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9A35371EA17D3D00A2F333 /* STSubmitLoading.swift in Sources */,
+				DA7EFE7A1EA5799500EB8ABC /* CubeNavigationController.m in Sources */,
 				DA9A35391EA17D3D00A2F333 /* STWalkLoading.swift in Sources */,
+				DA7EFDF71EA56A2300EB8ABC /* ATHSecureCodeViewController.swift in Sources */,
 				DA9A35281EA1732300A2F333 /* ATHRoundButton.swift in Sources */,
 				DA9A35431EA1B19B00A2F333 /* ATHLabel.swift in Sources */,
 				DA6B66E01E9F130A0061E731 /* ATHMacro.swift in Sources */,
+				DA7EFE751EA578F700EB8ABC /* UINavigationController+ABExtras.m in Sources */,
 				DA1157DB1EA023020015C41B /* ATHLogButton.swift in Sources */,
 				DA9A353C1EA17D3D00A2F333 /* STLoadingGroup.swift in Sources */,
 				DA6B66B21E9F0DB80061E731 /* ViewController.swift in Sources */,
@@ -448,8 +518,11 @@
 				DA9A35361EA17D3D00A2F333 /* STPacManLoading.swift in Sources */,
 				DA9A35221EA15EDA00A2F333 /* ATHBackgroundView.swift in Sources */,
 				DA1157EE1EA045E50015C41B /* ATHBaseView.swift in Sources */,
+				DA7EFE741EA578F700EB8ABC /* UIImageView+ABExtras.m in Sources */,
+				DA7EFE761EA578F700EB8ABC /* UIView+ABExtras.m in Sources */,
 				DA9A353B1EA17D3D00A2F333 /* STLoadingable.swift in Sources */,
 				DA1157F01EA06B9E0015C41B /* ATHSignUpViewController.swift in Sources */,
+				DA7EFE731EA578F700EB8ABC /* NSObject+ABExtras.m in Sources */,
 				DA1157DA1EA023020015C41B /* ATHInputView.swift in Sources */,
 				DA1157EA1EA042760015C41B /* ATHMainViewController.swift in Sources */,
 				DA1157C91EA022D30015C41B /* ATHBaseViewController.swift in Sources */,
@@ -609,11 +682,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = RRG9X53X93;
 				INFOPLIST_FILE = AthenaUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "University-of-Rochester.AthenaUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AthenaUI/AthenaUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -622,11 +698,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = RRG9X53X93;
 				INFOPLIST_FILE = AthenaUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "University-of-Rochester.AthenaUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AthenaUI/AthenaUI-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

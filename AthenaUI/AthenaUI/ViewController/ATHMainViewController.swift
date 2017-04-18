@@ -58,6 +58,9 @@ class ATHMainViewController: ATHBaseViewController, ATHSignInViewDelegate, ATHFo
     // MARK: ATHFooterViewDelegate
     
     func sign_up(_ sender: UIButton) {
+        let signUpVC = self.storyboard!.instantiateViewController(withIdentifier: "ATHSignUpViewController")
+        self.navigationController!.pushViewController(signUpVC, animated: true)
+//        self.present(viewController, animated:true, completion: nil)
         print("\(sender.titleLabel?.text)")
     }
     
